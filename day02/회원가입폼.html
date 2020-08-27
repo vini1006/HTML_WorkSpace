@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입 양식</title>
+</head>
+<body>
+
+<table width = "600px" border="1px">
+<!--층 구분-->
+	<tr>
+		<td colspan="2" align="center">회원가입</td>
+	</tr>
+
+<!--층 구분-->
+	<tr>
+		<td>
+			ID
+		</td>
+		<td>
+			<input type="text" placeholder="아이디를 입력하세요"/>
+		</td>
+	</tr>
+<!--층 구분-->
+	<tr>
+		<td>
+			PW
+		</td>
+		<td>
+			<input type="password" placeholder="비밀번호를 입력하세요"/>
+		</td>
+	</tr>
+<!--층 구분-->
+	<tr>
+		<td>
+			이름
+		</td>
+		<td>
+			<input type="text" placeholder="이름을 입력하세요"/>
+		</td>
+	</tr>
+<!--층 구분-->
+	<tr>
+		<td>
+			연락처
+		</td>
+		<td>
+			<select>
+				<option>010</option>
+				<option>011</option>
+				<option>017</option>
+				<option>019</option>
+			</select>
+			- <input type="text" placeholder="앞자리" size="8"/>
+			- <input type="text" placeholder="뒷자리" size="8"/>
+		</td>
+	</tr>
+<!--층 구분-->
+	<tr>
+		<td>
+			취미
+		</td>
+		<td>
+				여행<input type ="checkbox"/>
+				독서<input type ="checkbox"/>
+				운동<input type ="checkbox"/>
+				IT<input type ="checkbox"/>
+		</td>
+	</tr>
+<!--층 구분-->
+	<tr>
+		<td>
+			이메일
+		</td>
+		<td>
+			<input type="text" placeholder="이메일아이디를 입력하세요"/>
+			@<select>
+			<option>gmail.com</option>
+			<option>naver.com</option>
+			<option>hanmail.com</option>
+			</select>
+		</td>
+	</tr>
+<!--층 구분-->
+	<tr>
+		<td>
+			이메일 수신여부 체크
+		</td>
+		<td>
+			예<input type="radio" name="recieve"/>
+			아니오<input type="radio" name="recieve"/>
+		</td>
+	</tr>
+	<!--층 구분-->
+	<tr>
+		<td>
+			우편번호
+		</td>
+		<td>
+			<input type="text" placeholder="우편번호" size="5" readonly/>
+			<button>우편번호 검색</button>
+		</td>
+	</tr>
+	<!--층 구분-->
+	<tr>
+		<td colspan="2" align="center"><button >가입하기</button></td>
+	</tr>
+
+</table>
+</body>
+</html>
