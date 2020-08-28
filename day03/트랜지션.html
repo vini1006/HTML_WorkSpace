@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>트랜지션</title>
+<style>
+
+div{
+	margin:20px;
+	/*모든div는 20px만큼 떨어져라*/
+}
+
+#box{
+	width:100px;
+	height:100px;
+	background:red;
+	/*변화되는 시간을 늘려보자-transition*/
+	transition:width 1s;
+}
+
+
+#box:hover{
+	width:300px;
+}
+
+#box2{
+	width:100px;
+	height:100px;
+	background:green;
+	transition:background 2s;
+}
+
+#box2:hover{
+	background:#33ff66;
+}
+
+#box3{
+	width:100px;
+	height:100px;
+	background:green;
+	border:1px solid red;
+	transition:border 1s;
+}
+
+#box3:hover{
+	border:10px solid red;
+}
+
+#box4{
+	width:100px;
+	height:100px;
+	background-image:/*선형*/linear-gradient(to right, yellow, red)
+	transition:background-image 2s;
+}
+
+#box4:hover{ /*얘는 잘안됨*/
+	background-image:linear-gradient(to right, orange, yellow)
+{
+
+
+</style>
+</head>
+<body>
+
+<pre>
+	<h3>CSS3부터 프로그래밍에 의존하지 않고도
+			간단한 애니메이션을 구현할 수 있다.
+	</h3>
+</pre>
+<div id="box">width늘리기</div>
+<div id="box2">색상트랜지션</div>
+<div id="box3">경계트랜지션</div>
+<div id="box4">그라디언트</div>
+</body>
+</html>
+

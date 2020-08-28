@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+/*일부를 공통적으로 사용할 스타일의 경우에는 class란 단위로 정의하여 재사용 가능
+	클래스 명명법 아무거나 이름붙이고 .붙이면 됨.
+*/
+.titleStyle{
+	background : red;
+}
+
+
+div{
+	width : 200px;
+}
+
+a{
+	text-decoration : none; /*a태그의 밑줄 제거 (데코를 없앤다잉)*/
+	display : block; /*태그의 속성을 block형으로 교체하는 방법*/
+	background-color : #eeeeee;
+}
+
+</style>
+</head>
+<body>
+<!-- 
+	링크tag의 옵션에는 대상 프레임에 대한 target이 지원됨
+	_self : default값(본인프레임을 얘기하는듯)
+	_parent : 새창으로 띄움
+	개발자가 원하는 프레임의 이름을 지정가능.
+-->
+<!--모든 메뉴를 담고 있을 용도의 박스를 구현-->
+메뉴 나올곳 !!
+<div>
+	<a href="#" class="titleStyle">1일차</a>
+	<a href="#">예제2</a>
+	<a href="#">예제3</a>
+	<a href="#">예제4</a>
+</div>
+
+<div>
+	<a href="#" class="titleStyle">2일차</a>
+	<a href="#">예제2</a>
+	<a href="#">예제3</a>
+	<a href="#">예제4</a>
+</div>
+
+<div>
+	<a href="#" class="titleStyle">3일차</a>
+	<a href="#">예제2</a>
+	<a href="#">예제3</a>
+	<a href="#">예제4</a>
+</div>
+
+</body>
+</html>

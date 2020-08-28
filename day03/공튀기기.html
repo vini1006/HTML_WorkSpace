@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>공튀기기</title>
+</head>
+<style>
+
+
+
+#wrapper{
+	height:700px;
+	width:300px;
+	position:absolute;
+
+
+	animation-name:aniBg3;
+	animation-duration:8s;/*변화효과소요시간?*/
+	animation-iteration-count:1; /*애니메이션 반복재생*/
+	animation-direction:alternate; /*애니메이션 방향성*/
+}
+
+
+#ball{
+	left:100px;
+	animation-name:aniBg1;
+	animation-duration:0.5s;/*변화효과소요시간?*/
+	animation-iteration-count:15; /*애니메이션 반복재생*/
+	animation-direction:alternate; /*애니메이션 방향성*/
+
+	background-image:url(../images/ball.png);
+	background-size: 150px;
+	background-repeat:none;
+	background-position:center;
+	width:150px;
+	height:150px;
+	position:absolute;
+	border-radius:50%;
+	
+}
+#bd{
+	left:80px;
+	background-image:url(../images/blackdot.png);
+	background-position:center;
+	width:130px;
+	height:130px;
+	position:absolute;
+	top:600px;
+	border-radius:50%;
+	animation-name:aniBg2;
+	animation-duration:0.5s;/*변화효과소요시간?*/
+	animation-iteration-count:15; /*애니메이션 반복재생*/
+	animation-direction:alternate; /*애니메이션 반복재생*/
+
+	
+}
+ 
+/*애니메이션 프레임 정의*/ 
+@keyframes aniBg3{
+	from{
+		left:0px;
+	}
+	to{
+		left:800px;
+	}
+}
+@keyframes aniBg1{/*메소드 만드는 느낌*/
+	from{
+		top:300px;
+		left:100px;
+	}
+	to{
+		top:0px;
+		left:100px;
+	}
+}
+
+@keyframes aniBg2{/*메소드 만드는 느낌*/
+	from{
+	
+	top:450px;
+	left:100px;
+	}
+	to{
+	width:50px;
+	height:50px;
+	top:600px;
+	
+	left:100px;
+	}
+}
+
+</style>
+<body>
+	<div id="wrapper">	
+		<div id="ball" ></div>
+		<div id="bd"></div>
+	</div>
+</body>
+</html>

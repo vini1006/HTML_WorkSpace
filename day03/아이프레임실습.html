@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>아이프레임</title>
+<style>
+/*아이프레임의 위치와 크기를 CSS를 이용하여 조절*/
+#main1{
+	position : absolute;
+	left : 500px;
+	top : 200px;
+	border : 0px;
+
+}
+
+#hr{
+	position : absolute;
+	top : 200px;
+}
+</style>
+</head>
+<body>
+
+<!-- 
+	기존 프레임의 단점
+	고전 프레임은 화면을 횡단, 종단으로 분리시켜 버리므로,
+	화면이 협소해짐,(트렌드에 맞지않다)
+
+	개선안)
+	크기와 위치를 자유롭게 설정할 수 있는 iframe을 주로 사용한다.
+-->
+	<a href="http://coupang.com" target="main"> 쿠팡으로 이동</a>
+	<iframe id="main1" name="main" src="아이프레임실습.html" >
+	
+	</iframe>
+</body>
+</html>
